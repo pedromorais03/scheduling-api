@@ -10,5 +10,7 @@ export const getAppointments = (req: Request, res: Response) => {
 export const createAppointment = (req: Request, res: Response) => {
    // get infos from req.body
 
+   let newAppt: Appointment = ({ id: 1, user: 1, scheduledAt: new Date(), scheduledTo: new Date(), duration: 10, service: 2 })
+
    res.status(201).json({ message: "Appointment Created"})
 }
